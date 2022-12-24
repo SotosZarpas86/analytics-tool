@@ -1,0 +1,29 @@
+{
+  "name": "nexus-analytics-tool",
+  "version": "1.0.3",
+  "description": "Nexus analytics tool wrapper",
+  "main": "dist/nexus-analytics-tool.cjs.js",
+  "module": "dist/nexus-analytics-tool.esm.js",
+  "browser": "dist/nexus-analytics-tool.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "node test/spec",
+    "pretest": "npm run build"
+  },
+  "author": "nexus",
+  "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "rollup": "^2.79.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "mixpanel-browser": "^2.45.0"
+  }
+}
